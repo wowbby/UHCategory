@@ -1,0 +1,6 @@
+use_frameworks!
+target 'UHCategory_Tests' do
+  pod 'UHCategory', :path => '../'
+  
+  
+end

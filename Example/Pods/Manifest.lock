@@ -1,0 +1,16 @@
+PODS:
+  - UHCategory (0.1.0)
+
+DEPENDENCIES:
+  - UHCategory (from `../`)
+
+EXTERNAL SOURCES:
+  UHCategory:
+    :path: ../
+
+SPEC CHECKSUMS:
+  UHCategory: a9684f27d9fdde6a7b7c5f7a1550f1c3bf1a2377
+
+PODFILE CHECKSUM: 3c19d83ade6c87e6660f251f03f8ffb00a62476d
+
+COCOAPODS: 1.3.1
