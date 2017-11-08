@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		3B445164A66B9683F8227005 /* Pods_UHCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		589D92559D27F91A5DA40886 /* UHCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = UHCategory.podspec; path = ../UHCategory.podspec; sourceTree = "<group>"; };
+		589D92559D27F91A5DA40886 /* UHCategory.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = UHCategory.podspec; path = ../UHCategory.podspec; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -27,10 +27,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6B3F8CDEEDCD2A0B2C93A63B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6B3F8CDEEDCD2A0B2C93A63B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9D5D4004D224385BA4D38189 /* Pods-UHCategory_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHCategory_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UHCategory_Tests/Pods-UHCategory_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C65ECA6B47832BE87E04E848 /* Pods-UHCategory_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UHCategory_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UHCategory_Tests/Pods-UHCategory_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D1FF6D1FB8416FC29B31FAE4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D1FF6D1FB8416FC29B31FAE4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +151,7 @@
 				ORGANIZATIONNAME = wowbby;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						DevelopmentTeam = PP27UD8NYZ;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -338,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9D5D4004D224385BA4D38189 /* Pods-UHCategory_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PP27UD8NYZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -361,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C65ECA6B47832BE87E04E848 /* Pods-UHCategory_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = PP27UD8NYZ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -20,6 +20,8 @@
 		E0635F0DB455D0F5842479F9BD32557C /* UHCategory-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A94D601445C865670B30390E7446FC9 /* UHCategory-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EF6FE06F131FD9CC4D77BABB544CC97A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F0B4DCB6C8798D23B31A2685FB7ABED0 /* Pods-UHCategory_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A4F0F3817FAC0D4BCF2C26A78B67BC6 /* Pods-UHCategory_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F56C5CEA1FB2DA500073E2F9 /* UIView+UICrashSafety.h in Headers */ = {isa = PBXBuildFile; fileRef = F56C5CE81FB2DA500073E2F9 /* UIView+UICrashSafety.h */; };
+		F56C5CEB1FB2DA500073E2F9 /* UIView+UICrashSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = F56C5CE91FB2DA500073E2F9 /* UIView+UICrashSafety.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,15 +52,17 @@
 		7903D6EA8C3E672B8B761973FABC396C /* UHCategory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UHCategory-dummy.m"; sourceTree = "<group>"; };
 		7D0CBCE2E3C7ED488ED5B3EA6C3B496D /* Pods-UHCategory_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UHCategory_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7ED84076F108CCDC618A2F9300F9639D /* NSString+RegexCategory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+RegexCategory.m"; path = "UHCategory/Classes/NSString+RegexCategory.m"; sourceTree = "<group>"; };
-		91A443FB372C8D6538970D44D0D63B38 /* UHCategory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UHCategory.framework; path = UHCategory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A443FB372C8D6538970D44D0D63B38 /* UHCategory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UHCategory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A697F85A3FBB7950D1C7B2DEEFACED /* UHCategory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UHCategory-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		98B8F63C3D3D79FF8F16C38F415DD6CA /* UHCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UHCategory.h; path = UHCategory/Classes/UHCategory.h; sourceTree = "<group>"; };
 		B2B3B0500565F3F624687094A4ADA658 /* NSString+RegexCategory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+RegexCategory.h"; path = "UHCategory/Classes/NSString+RegexCategory.h"; sourceTree = "<group>"; };
-		D20CE0F6568E9E4F654BBEA060D98D6A /* UHCategory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = UHCategory.modulemap; sourceTree = "<group>"; };
-		D87DE58699E958234A37E90F3632B62F /* Pods_UHCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UHCategory_Tests.framework; path = "Pods-UHCategory_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20CE0F6568E9E4F654BBEA060D98D6A /* UHCategory.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = UHCategory.modulemap; sourceTree = "<group>"; };
+		D87DE58699E958234A37E90F3632B62F /* Pods_UHCategory_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UHCategory_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F56C5CE81FB2DA500073E2F9 /* UIView+UICrashSafety.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "UIView+UICrashSafety.h"; path = "UHCategory/Classes/UIView+UICrashSafety.h"; sourceTree = "<group>"; };
+		F56C5CE91FB2DA500073E2F9 /* UIView+UICrashSafety.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "UIView+UICrashSafety.m"; path = "UHCategory/Classes/UIView+UICrashSafety.m"; sourceTree = "<group>"; };
 		F9BDEDE23617FA4CAFCB05E0E561DC65 /* UIView+HWcornerRadii.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HWcornerRadii.m"; path = "UHCategory/Classes/UIView+HWcornerRadii.m"; sourceTree = "<group>"; };
-		FCDD8A4136A63335CA2579F073CDCFE6 /* Pods-UHCategory_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-UHCategory_Tests.modulemap"; sourceTree = "<group>"; };
+		FCDD8A4136A63335CA2579F073CDCFE6 /* Pods-UHCategory_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-UHCategory_Tests.modulemap"; sourceTree = "<group>"; };
 		FE5FA7E95BE56E5B347A9F3C0D66EC11 /* UIButton+TouchAreaInsets.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TouchAreaInsets.m"; path = "UHCategory/Classes/UIButton+TouchAreaInsets.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +180,8 @@
 				FE5FA7E95BE56E5B347A9F3C0D66EC11 /* UIButton+TouchAreaInsets.m */,
 				700B4346986DAC82DEEC5F493414A195 /* UIView+HWcornerRadii.h */,
 				F9BDEDE23617FA4CAFCB05E0E561DC65 /* UIView+HWcornerRadii.m */,
+				F56C5CE81FB2DA500073E2F9 /* UIView+UICrashSafety.h */,
+				F56C5CE91FB2DA500073E2F9 /* UIView+UICrashSafety.m */,
 				5BCABDB93283E202245DAD0899A44391 /* Support Files */,
 			);
 			name = UHCategory;
@@ -202,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0B4DCB6C8798D23B31A2685FB7ABED0 /* Pods-UHCategory_Tests-umbrella.h in Headers */,
+				F56C5CEA1FB2DA500073E2F9 /* UIView+UICrashSafety.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F56C5CEB1FB2DA500073E2F9 /* UIView+UICrashSafety.m in Sources */,
 				CE6BDEAA9EBA2B0E634DB851C022CD79 /* Pods-UHCategory_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
