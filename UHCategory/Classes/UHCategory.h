@@ -12,5 +12,6 @@
 #import "NSString+RegexCategory.h"
 #import "UIButton+TouchAreaInsets.h"
 #import "UIView+HWcornerRadii.h"
+#import "UIView+UICrashSafety.h"
 
 #endif /* UHCategory_h */
