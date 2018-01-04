@@ -1,5 +1,5 @@
 PODS:
-  - UHCategory (0.1.0)
+  - UHCategory (0.4.0)
 
 DEPENDENCIES:
   - UHCategory (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  UHCategory: a9684f27d9fdde6a7b7c5f7a1550f1c3bf1a2377
+  UHCategory: 621194a8ed13e9a684c09408fa4667b0b66ead58
 
 PODFILE CHECKSUM: 3c19d83ade6c87e6660f251f03f8ffb00a62476d
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0.beta.2

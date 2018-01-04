@@ -14,6 +14,8 @@
 #import "UHCategory.h"
 #import "UIButton+TouchAreaInsets.h"
 #import "UIView+HWcornerRadii.h"
+#import "UIView+RectCorner.h"
+#import "UIView+UICrashSafety.h"
 
 FOUNDATION_EXPORT double UHCategoryVersionNumber;
 FOUNDATION_EXPORT const unsigned char UHCategoryVersionString[];
