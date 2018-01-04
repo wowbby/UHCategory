@@ -8,35 +8,24 @@
 
 #import "UIView+HWcornerRadii.h"
 #import <objc/runtime.h>
-@implementation UIView (HWcornerRadii)
-- (void)rectCornerWithUIRectCorner:(UIRectCorner)rectCorner cornerSize:(CGSize)size
-{
-
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:rectCorner cornerRadii:size];
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = self.bounds;
-    maskLayer.path = maskPath.CGPath;
-    self.layer.mask = maskLayer;
-}
-@end
 @implementation NSObject (_UHAdd)
 
-+ (void)xw_swizzleInstanceMethod:(SEL)originalSel with:(SEL)newSel {
++ (void)uh_swizzleInstanceMethod:(SEL)originalSel with:(SEL)newSel {
     Method originalMethod = class_getInstanceMethod(self, originalSel);
     Method newMethod = class_getInstanceMethod(self, newSel);
     if (!originalMethod || !newMethod) return;
     method_exchangeImplementations(originalMethod, newMethod);
 }
 
-- (void)xw_setAssociateValue:(id)value withKey:(void *)key {
+- (void)uh_setAssociateValue:(id)value withKey:(void *)key {
     objc_setAssociatedObject(self, key, value, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (id)xw_getAssociatedValueForKey:(void *)key {
+- (id)uh_getAssociatedValueForKey:(void *)key {
     return objc_getAssociatedObject(self, key);
 }
 
-- (void)xw_removeAssociateWithKey:(void *)key {
+- (void)uh_removeAssociateWithKey:(void *)key {
     objc_setAssociatedObject(self, key, nil, OBJC_ASSOCIATION_ASSIGN);
 }
 
@@ -55,7 +44,7 @@
     return image;
 }
 
-+ (UIImage *)xw_maskRoundCornerRadiusImageWithColor:(UIColor *)color cornerRadii:(CGSize)cornerRadii size:(CGSize)size corners:(UIRectCorner)corners borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth{
++ (UIImage *)uh_maskRoundCornerRadiusImageWithColor:(UIColor *)color cornerRadii:(CGSize)cornerRadii size:(CGSize)size corners:(UIRectCorner)corners borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth{
     return [UIImage xw_imageWithSize:size drawBlock:^(CGContextRef  _Nonnull context) {
         CGContextSetLineWidth(context, 0);
         [color set];
@@ -110,7 +99,7 @@ static NSMutableSet<UIImage *> *maskCornerRaidusImageSet;
     if (!cornerRadiusLayer) {
         cornerRadiusLayer = [CALayer new];
         cornerRadiusLayer.opaque = YES;
-        [self uh_setAssociateValue:cornerRadiusLayer withKey:_XWMaskCornerRadiusLayerKey];
+        [self uh_setAssociateValue:cornerRadiusLayer withKey:_UHMaskCornerRadiusLayerKey];
     }
     if (color) {
         [cornerRadiusLayer uh_setAssociateValue:color withKey:"_uh_cornerRadiusImageColor"];
